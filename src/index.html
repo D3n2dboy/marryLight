@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка «NEW PROJECT NAME»</title>
+</head>
+
+<body>
+    <canvas id="q"></canvas>
+
+    <div class="rootpage">
+        <h1>Верстка «PROJECT NAME»</h1>
+        <div class="rootpage__info">
+            Верстка для портфолио
+        </div>
+        <h2>Готовые страницы:</h2>
+        <ol class="rootpage__list">
+            <li><a target="_blank" href="home.html">Главная</a></li>
+        </ol>
+
+        <div class="rootpage__feedback">
+            <h3 class="rootpage__feedback-title">Cвязаться со мной:</h3>
+
+            <div class="rootpage__feedback-items">
+                <div class="rootpage__feedback-item">
+                    <div class="rootpage__feedback-label">Telegram:</div>
+                    <a href="https://t.me/ryazanovdeni" class="rootpage__feedback-link">@ryazanovdeni</a>
+                </div>
+                <div class="rootpage__feedback-item">
+                    <div class="rootpage__feedback-label">Вконтакте:</div>
+                    <a href="https://vk.com/ryazanov.denis" class="rootpage__feedback-link">ryazanov.denis</a>
+                </div>
+                <div class="rootpage__feedback-item">
+                    <div class="rootpage__feedback-label">E-mail:</div>
+                    <a href="mailto:d3n2dboy@gmail.com" class="rootpage__feedback-link">d3n2dboy@gmail.com</a>
+                </div>
+                <div class="rootpage__feedback-item">
+                    <div class="rootpage__feedback-label">GitHub:</div>
+                    <a href="https://github.com/D3n2dboy" class="rootpage__feedback-link">D3n2dboy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    @charset "UTF-8";
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+    *,
+    *::before,
+    *::after {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        min-width: 320px;
+        width: 100%;
+        color: rgb(35, 212, 35);
+        background-color: #000000;
+    }
+
+    body {
+        font-family: Montserrat;
+        font-size: 100%;
+        line-height: 1;
+        font-size: 1rem;
+    }
+
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: underline;
+        color: rgb(42, 165, 42);
+
+    }
+
+    a:visited {
+        text-decoration: underline;
+        color: rgb(42, 165, 42);
+
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(18, 223, 18);
+
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    .wrapper {
+        /*overflow: auto;*/
+    }
+
+    .rootpage {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+        /*border-radius: 7px;*/
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        /*border-style: dashed;*/
+        background-color: rgba(20, 20, 20, 0.753);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0px 0px 1.25rem 0px;
+        border-bottom: 1px solid rgb(48, 48, 48);
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 1.85rem;
+            margin: 0px 0px 1.25rem 0px;
+        }
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0px 0px 1rem 0px;
+    }
+
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 1.125rem;
+            margin: 0px 0px 1rem 0px;
+        }
+    }
+
+    .rootpage__info {
+        line-height: 140%;
+        margin: 0px 0px 1.5rem 0px;
+    }
+
+    .rootpage__list {
+        margin: 0px 0px 2.25rem 1.25rem;
+    }
+
+    .rootpage__list li:not(:last-child) {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .rootpage__feedback {}
+
+    .rootpage__feedback-title {
+        margin-bottom: 15px;
+    }
+
+    .rootpage__feedback-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .rootpage__feedback-item {
+        padding: 15px 22px;
+        color: #ffffff;
+        background-color: rgb(1, 143, 1);
+        border-radius: 25px;
+    }
+
+    .rootpage__feedback-item a {
+        color: #ffffff;
+    }
+
+    .rootpage__feedback-label {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .rootpage__feedback-link {
+        font-weight: 500;
+    }
+</style>
+
+<script type="text/javascript">
+    var s = window.screen;  //Переменная для выясняющая размер вашего экрана 
+    console.log(s);
+    var width = q.width = s.availWidth;
+    var height = q.height = s.availHeight;
+    var letters = Array(256).join(1).split('');
+
+    var draw = function () {
+        q.getContext('2d').fillStyle = 'rgba(0,0,0,.05)'; //Тут цвет фона
+        q.getContext('2d').fillRect(0, 0, width, height);
+        q.getContext('2d').fillStyle = '#0F0'; //Тут цвет букв
+        letters.map(function (y_pos, index) {
+            text = String.fromCharCode(65 + Math.random() * 33);
+            x_pos = index * 10;
+            q.getContext('2d').fillText(text, x_pos, y_pos);
+            letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+        });
+    };
+    setInterval(draw, 53);
+</script>
+
+</html>

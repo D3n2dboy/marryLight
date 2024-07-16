@@ -1,0 +1,108 @@
+%ic {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+    &:before {
+        @extend %ic;
+    }
+}
+
+.icon {
+    font-size: 80px;
+
+    @media (max-width:1145.98px) {
+        font-size: 65px;
+    }
+}
+
+._icon-bine-bocal:before {
+    content: "\e900";
+}
+
+._icon-calendar:before {
+    content: "\e901";
+}
+
+._icon-coctail-bold:before {
+    content: "\e902";
+}
+
+._icon-coctail-lass:before {
+    content: "\e903";
+}
+
+._icon-coctail-light:before {
+    content: "\e904";
+}
+
+._icon-dress:before {
+    content: "\e905";
+}
+
+._icon-file-icons_ring:before {
+    content: "\e906";
+}
+
+._icon-game-icons_ring-box:before {
+    content: "\e907";
+}
+
+._icon-geo:before {
+    content: "\e908";
+}
+
+._icon-geo-loc:before {
+    content: "\e909";
+}
+
+._icon-geoloc-2:before {
+    content: "\e90a";
+}
+
+._icon-geoloc-3:before {
+    content: "\e90b";
+}
+
+._icon-heart:before {
+    content: "\e90c";
+}
+
+._icon-la_ring:before {
+    content: "\e90d";
+}
+
+._icon-arrow-right-light:before {
+    content: "\e90e";
+}
+
+._icon-photo:before {
+    content: "\e90f";
+}
+
+._icon-play:before {
+    content: "\e910";
+}
+
+._icon-plus-light:before {
+    content: "\e911";
+}
+
+._icon-question:before {
+    content: "\e912";
+}
+
+._icon-salyte:before {
+    content: "\e913";
+}
+
+._icon-sound:before {
+    content: "\e914";
+}

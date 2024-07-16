@@ -1,0 +1,58 @@
+// Стили footer
+
+.footer {
+    position: relative;
+    height: 500px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // .footer__container
+
+    &__container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .footer__body
+
+    &__body {
+        max-width: 800px;
+        position: relative;
+        padding: 35px;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #0000006b;
+        border-radius: 5px;
+
+        @media (max-width:$tablet) {
+            padding: 25px 15px;
+        }
+    }
+
+    // .footer__text
+
+    &__text {}
+
+    // .footer__names
+
+    &__names {
+        font-family: $fontTitle;
+        text-transform: uppercase;
+        font-size: 45px;
+
+        span {
+            color: #e4e4e4;
+        }
+    }
+}

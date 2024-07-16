@@ -1,0 +1,151 @@
+// Общие стили писать тут
+//=============================================================================================================================================
+
+// Заголовки
+.title {
+    font-size: 70px;
+    font-family: $fontTitle;
+    font-weight: 600;
+    line-height: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 70px;
+    }
+
+    @media (max-width:$pc) {
+        font-size: 50px;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// Ссылки
+
+// Элементы формы
+
+// Прочее
+
+.text {
+    color: $fontTextColor;
+    font-size: 18px;
+    line-height: 1.5;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.decor {
+    position: relative;
+    width: 35%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: rgb(19, 19, 19);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 15px;
+        height: 15px;
+        border: 2px solid rgb(19, 19, 19);
+        background-color: #fff;
+    }
+}
+
+.black-bg {
+    background-color: #000;
+    color: #fff;
+
+    & .section__center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .decor {
+        background-color: #fff;
+        align-self: center;
+        margin-bottom: 60px;
+
+        &::before {
+            background-color: #000;
+            border: 2px solid #fff;
+        }
+    }
+}
+
+.bg-img {
+    position: relative;
+    z-index: 2;
+    background: url('/img/wait/bg.png') 0 0 repeat;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    font-family: $fontTitle;
+    font-size: 120px;
+    text-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+
+    // &:not(:last-child) {
+    //     margin-bottom: 25px;
+    // }
+
+    // span {
+    //     color: #e7e7e74f;
+    // }
+
+    @media (max-width:$tablet) {
+        font-size: 90px;
+    }
+
+    @media (max-width:$mobile) {
+        font-size: 60px;
+    }
+
+    @media (max-width:$tablet) {
+        text-align: center;
+    }
+
+    // .name__one
+
+    &__one {
+        //display: block;
+        transition: all 0.8s ease 0.4s;
+        transform: translateY(100%);
+        opacity: 0;
+        line-height: 0.8;
+
+        ._animation-start & {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+
+    // .name__two
+
+    &__two {
+        transition: all 0.8s ease;
+        transform: translateY(100%);
+        opacity: 0;
+
+        ._animation-start & {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+}
+
+._anim-items {
+    &._animation-start {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
