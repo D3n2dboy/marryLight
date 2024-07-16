@@ -513,7 +513,7 @@ h6 {
 }
 
 .no-webp .bg-img{
-  background: url("/img/wait/bg.png") 0 0 repeat; }
+  background: url("@img/wait/bg.png") 0 0 repeat; }
 
 .bg-img {
   position: relative;
@@ -1704,6 +1704,6 @@ th {
   }
 }
 
-.webp .bg-img{ background: url(/img/wait/bg.webp) 0 0 repeat; }
+.webp .bg-img{ background: url(@img/wait/bg.webp) 0 0 repeat; }
 
 .webp .form-registration{ background: url(/img/wait/bg.webp) 0 0 repeat; }
