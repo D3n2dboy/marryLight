@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__body">
+            <div class="header__top _anim-items _animation-one-play">
+                Приглашение на свадьбу
+            </div>
+
+            <div class="audio">
+                <audio class="audio__player" id="player">
+                    <source src="/files/iron.mp3" type="audio/mpeg" />
+                    <p>
+                        Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+                        <a href="iron.mp3">ссылка на аудио</a>
+                    </p>
+                </audio>
+
+                <button class="audio__button player-button"><span class="icons _icon-sound"></span></button>
+                <div class="audio__text">вкл. музыку</div>
+            </div>
+
+            <div class="header__footer">
+                <div class="header__names name">
+                    <span class="name__one _anim-items _animation-one-play">Денис</span>
+                    <span class="name__two _anim-items _animation-one-play">& Алёна</span>
+                </div>
+                <div class="header__date _anim-items _animation-one-play">
+                    30 / 07 / 2024
+                </div>
+            </div>
+        </div>
+    </div>
+    <picture><source srcset="img/header-img-cb.webp" type="image/webp"><img src="img/header-img-cb.jpg" alt="photo"></picture>
+</header>
+        <main class="page">
+            <section class="section moment ">
+                <div class="section__container">
+                    <div class="section__body">
+                        <div class="section__left">
+                            <picture><source srcset="img/sections/moment.webp" type="image/webp"><img src="img/sections/moment.png" alt="moment"></picture>
+                        </div>
+                        <div class="section__right">
+                            <div class="decor"></div>
+                            <h1 class="title section__title _anim-items _animation-one-play">
+                                Этот момент<br> настал!!!
+                            </h1>
+
+                            <div class="text section__text _anim-items _animation-one-play">
+                                <p>Мы верим, что этот день послужит началом нашей счастливой жизни. Поэтому не
+                                    представляем наш праздник без Вашего участия!</p>
+                                <p>Разделите с нами это главное событие лета - подарите нам своё внимание и поддержку.
+                                </p>
+                            </div>
+                            <div class="decor"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-img wait">
+                <div class="section__container">
+                    <div class="section__body">
+                        <div class="section__left">
+                            <h1 class="title section__title _anim-items _animation-one-play">
+                                Мы ждем Вас!
+                            </h1>
+
+                            <div class="section__text _anim-items _animation-one-play">
+                                <p>Не пропустите самое важное событие этого лета - день нашей свадьбы!</p>
+                            </div>
+                        </div>
+                        <div class="section__right date">
+                            <div class="date__body">
+                                <div class="date__title">Июль</div>
+                                <div class="date__marry-date">31 / 07 / 2024</div>
+                                <div class="decor"></div>
+                                <div class="date__calendar" id="calendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section location">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="title section__title _anim-items _animation-one-play">
+                            Локация
+                        </div>
+                        <div class="location__body">
+                            <div class="location__image">
+                                <picture><source srcset="img/sections/location-2.webp" type="image/webp"><img src="img/sections/location-2.png" alt="location"></picture>
+                            </div>
+                            <div class="location__info">
+                                <div class="location__text">
+                                    <div class="location__title">
+                                        Imperial Plaza
+                                    </div>
+                                    <div class="location__sub-title">
+                                        Краснопрудная ул. 12, Москва,
+                                        107140
+                                    </div>
+                                    <div class="location__time">
+                                        Сбор гостей в 16:00
+                                    </div>
+                                </div>
+                                <a href="#" class="button location__button _icon-arrow-right-light">
+                                    Как добраться
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-img">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="title section__title  _anim-items _animation-one-play">
+                            Тайминги
+                        </div>
+                        <div class="timming">
+                            <div class="timming__body">
+                                <div class="timming__items">
+                                    <div class="timming__item">
+                                        <div class="timming__image">
+                                            <div class="icon _icon-geo-loc"></div>
+                                        </div>
+                                        <div class="timming__text">
+                                            <div class="timming__label">16:00</div>
+                                            <div class="timming__value">Сбор гостей</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timming__item">
+                                        <div class="timming__image">
+                                            <div class="icon _icon-la_ring"></div>
+                                        </div>
+                                        <div class="timming__text">
+                                            <div class="timming__label">17:00</div>
+                                            <div class="timming__value">Церемония регистрации</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timming__item">
+                                        <div class="timming__image">
+                                            <div class="icon _icon-coctail-lass"></div>
+                                        </div>
+                                        <div class="timming__text">
+                                            <div class="timming__label">17:30</div>
+                                            <div class="timming__value">Банкет</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timming__item">
+                                        <div class="timming__image">
+                                            <div class="icon _icon-game-icons_ring-box"></div>
+                                        </div>
+                                        <div class="timming__text">
+                                            <div class="timming__label">23:00</div>
+                                            <div class="timming__value">Завершение вечера</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="title section__title _anim-items _animation-one-play">
+                            Дресс-код
+                        </div>
+                        <div class="dress-code">
+                            <div class="text section__text dress-code__text _anim-items _animation-one-play">
+                                Мы очень готовимся к нашему незабываемому дню! <br> Поддержите нас Вашими улыбками и
+                                объятиями, <br>а также красивыми нарядами в палитре мероприятия.
+                            </div>
+
+                            <div class="dress-code__items">
+                                <div class="dress-code__item"></div>
+                                <div class="dress-code__item"></div>
+                                <div class="dress-code__item"></div>
+                                <div class="dress-code__item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section black-bg">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="title section__title _anim-items _animation-one-play">
+                            До нашей свадьбы осталось
+                        </div>
+
+                        <div class="decor"></div>
+
+                        <div class="timer">
+                            <div id="timer"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contacts">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="contacts__body">
+                            <div class="title section__title _anim-items _animation-one-play">
+                                Контакты
+                            </div>
+                            <div class="contacts__text">
+                                По всем вопросам связанным с мероприятием,<br> вы можете связаться с нашим
+                                организатором:
+                            </div>
+                            <div class="contacts__name">
+                                Иван
+                            </div>
+                            <a href="tel:123456789" class="contacts__phone">
+                                +7(123) 456-78-90
+                            </a>
+
+                            <a href="tel:123456789"
+                                class="button contacts__button _icon-arrow-right-light">Связаться</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section guest-form">
+                <div class="section__container">
+                    <div class="section__center">
+                        <div class="guest-form__body">
+                            <div class="guest-form__header">
+                                <div class="title section__title _anim-items _animation-one-play">
+                                    Анкета гостя
+                                </div>
+
+                                <div class="guest-form__sub-title">
+                                    Пожалуйста подтвердите свое присутствие
+                                </div>
+
+                                <div class="guest-form__deadline">
+                                    до 15 / 07 / 2024
+                                </div>
+                            </div>
+                            <form action="" class="form guest-form__form form-registration">
+                                <div class="decor"></div>
+
+                                <div class="form-registration__text">
+                                    Пожалуйста подтвердите свое присутствие
+                                </div>
+
+                                <div class="form-registration__line">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="Имя Фамилия" class="input form-registration__input">
+                                </div>
+
+                                <div class="form-registration__text">
+                                    Планируете присутвтвовать?
+                                </div>
+
+                                <div class="form-registration__line">
+                                    <div class="radio form-registration__radio">
+                                        <div class="radio__item">
+                                            <input id="rad_1" type="radio" name="radio" checked class="radio__input"
+                                                value="1">
+                                            <label for="rad_1" class="radio__label"><span class="radio__text">Да, с
+                                                    удовольствием</label>
+                                        </div>
+                                        <div class="radio__item">
+                                            <input id="rad_2" type="radio" name="radio" class="radio__input" value="2">
+                                            <label for="rad_2" class="radio__label"><span class="radio__text">Не
+                                                    смогу</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-registration__text">
+                                    Если вы будете не один, заполните поля ниже:
+                                </div>
+
+                                <div class="form-registration__line">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="Имя и Фамилия Вашего спутника / спутницы"
+                                        class="input form-registration__input">
+                                </div>
+
+                                <div class="form-registration__text">
+                                    Ваши предпочтения:
+                                </div>
+
+                                <div class="checkbox form-registration__checkbox">
+                                    <div class="checkbox__item">
+                                        <input id="check_1" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_1" class="checkbox__label"><span
+                                                class="checkbox__text">Шампанское</span></label>
+                                    </div>
+                                    <div class="checkbox__item">
+                                        <input id="check_2" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_2" class="checkbox__label"><span
+                                                class="checkbox__text">Красное вино</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_3" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_3" class="checkbox__label"><span class="checkbox__text">Белое
+                                                вино</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_4" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_4" class="checkbox__label"><span
+                                                class="checkbox__text">Водка</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_5" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_5" class="checkbox__label"><span
+                                                class="checkbox__text">Ром</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_6" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_6" class="checkbox__label"><span
+                                                class="checkbox__text">Виски</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_7" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_7" class="checkbox__label"><span
+                                                class="checkbox__text">Джин</span></label>
+                                    </div>
+
+                                    <div class="checkbox__item">
+                                        <input id="check_8" type="checkbox" name="checkbox" class="checkbox__input"
+                                            data-error="Ошибка">
+                                        <label for="check_8" class="checkbox__label"><span class="checkbox__text">Не пью
+                                                алкоголь</span></label>
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                    class="button form-registration__button  _icon-arrow-right-light">Отправить</button>
+                                <div class="decor"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <picture><source srcset="/img/footer/04.webp" type="image/webp"><img src="/img/footer/04.jpeg" alt="02"></picture>
+    <div class="footer__container">
+        <div class="footer__body">
+            <div class="footer__text">
+                До скорой встречи! С любовью,
+            </div>
+            <div class="footer__names">
+                Денис<br><span>&</span> Алёна
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="js/app.min.js"></script>
+    </div>
+</body>
+
+</html>
