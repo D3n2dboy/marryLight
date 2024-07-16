@@ -93,15 +93,6 @@
     font-size: 120px;
     text-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 
-
-    // &:not(:last-child) {
-    //     margin-bottom: 25px;
-    // }
-
-    // span {
-    //     color: #e7e7e74f;
-    // }
-
     @media (max-width:$tablet) {
         font-size: 90px;
     }
@@ -117,7 +108,6 @@
     // .name__one
 
     &__one {
-        //display: block;
         transition: all 0.8s ease 0.4s;
         transform: translateY(100%);
         opacity: 0;
