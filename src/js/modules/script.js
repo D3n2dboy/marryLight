@@ -103,8 +103,8 @@ function startCountdown(targetDate) {
 
 // Укажите дату здесь
 const year = 2024;
-const month = 6; // Июль (месяцы в JavaScript считаются с 0, то есть 0 - январь, 1 - февраль и т.д.)
-const day = 31; // Укажите день, который нужно выделить
+const month = 12; // Июль (месяцы в JavaScript считаются с 0, то есть 0 - январь, 1 - февраль и т.д.)
+const day = 28; // Укажите день, который нужно выделить
 
 generateCalendar(year, month, day);
 
